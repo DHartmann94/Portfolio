@@ -1,0 +1,10 @@
+:root {
+    --color-background: #141D2F;
+    --color-font: #FFFFFF;
+    --color-green: #70E61C;
+    --color-light-blue: #1CDAE6;
+    --color-purple: #9747FF;
+    --color-background-transparency: rgba(20, 29, 47, 0.8);;
+
+    --font-size-regular: 1rem;
+}

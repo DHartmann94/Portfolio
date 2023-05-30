@@ -1,0 +1,15 @@
+<header>
+    <a href="#">
+        <img src="favicon.ico" alt="Logo">
+    </a>
+    <div class="burger-menu" (click)="toggleMenu()">
+        <div [ngClass]="{ 'open': isMenuOpen }" class="bar"></div>
+    </div>
+    <nav [ngClass]="{ 'active': isMenuOpen }">
+        <ul>
+            <li (click)="toggleMenu()"><a href="#about-me">About Me</a></li>
+            <li (click)="toggleMenu()"><a href="#skills">Skills</a></li>
+            <li (click)="toggleMenu()"><a href="#portfolio">Portfolio</a></li>
+        </ul>
+    </nav>
+</header>

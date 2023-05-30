@@ -18,9 +18,36 @@
     background: #555;
 }
 
+
+html,
 body {
     margin: 0px;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
-    background-color: #141D2F;
+    color: var(--color-font);
+    background-color: var(--color-background);
+    scroll-behavior: smooth;
+}
+
+a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--color-font);
+    transition: all 225ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--color-green);
+    }
+}
+
+@media(min-width: 720px) {
+    .hide-mobile {
+        display: none !important;
+    }
+}
+
+@media(max-width: 720px) {
+    .hide-desktop {
+        display: none !important;
+    }
 }
