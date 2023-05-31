@@ -29,15 +29,11 @@ body {
 }
 
 a {
-    font-size: 1.4rem;
+    font-size: var(--font-size-mid);
     text-decoration: none;
     color: var(--color-font);
     transition: all 225ms ease-in-out;
     cursor: pointer;
-
-    &:hover {
-        color: var(--color-green);
-    }
 }
 
 @media(min-width: 720px) {

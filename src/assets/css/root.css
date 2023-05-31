@@ -7,4 +7,10 @@
     --color-background-transparency: rgba(20, 29, 47, 0.8);;
 
     --font-size-regular: 1rem;
+    --font-size-mid: 1.4rem;
+    --font-size-big: 2rem;
+    --font-size-headline: 5.6rem;
+
+    --header-hight: 109px;
+    --side-clearance: 0% 10% 0% 10%;;
 }
