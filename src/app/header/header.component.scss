@@ -32,3 +32,23 @@ header {
         object-fit: contain;
     }
 }
+
+nav {
+    a {
+        position: relative;
+      
+        &::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 3px;
+          background-color: var(--color-purple);
+          transition: all 225ms ease-in-out;
+        }
+      
+        &:hover::after {
+          width: 50%;
+          margin-left: 0;
+        }
+    }
+}

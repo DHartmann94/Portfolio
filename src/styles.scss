@@ -18,10 +18,15 @@
     background: #555;
 }
 
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 
 html,
 body {
-    margin: 0px;
+    height: 100%;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     color: var(--color-font);
     background-color: var(--color-background);
