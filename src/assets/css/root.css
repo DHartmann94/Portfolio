@@ -12,5 +12,6 @@
     --font-size-headline: 5.6rem;
 
     --header-hight: 109px;
-    --side-clearance: 0% 10% 0% 10%;;
+    --side-clearance: 0% 10% 0% 10%;
+    --side-clearance-mobile: 0% 5% 0% 5%;
 }

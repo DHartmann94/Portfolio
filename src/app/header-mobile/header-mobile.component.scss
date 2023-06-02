@@ -6,8 +6,8 @@ header {
     height: 109px;
     z-index: 999;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: var(--side-clearance);
     backdrop-filter: blur(32.5px);
 
@@ -19,8 +19,8 @@ header {
         height: 100vh;
         z-index: 1002;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         background-color: var(--color-background-transparency);
         transform: translateX(100%);
         transition: transform 425ms;
@@ -45,49 +45,56 @@ header {
     }
 
     img {
-        width: 50px;
-        height: 50px;
-        object-fit: contain;
+        z-index: 1003;
         position: fixed;
         top: 50%;
-        left: 10%;
+        width: 50px;
+        height: 50px;
         transform: translate(0, -50%);
-        z-index: 1003;
+        object-fit: contain;
+    }
+
+    @media(max-width: 970px) {
+        padding: var(--side-clearance-mobile);
     }
 }
 
 nav {
     a {
         position: relative;
-      
+
         &::after {
-          content: "";
-          display: block;
-          width: 0;
-          height: 3px;
-          background-color: var(--color-purple);
-          transition: all 225ms ease-in-out;
+            content: "";
+            display: block;
+            width: 0;
+            height: 3px;
+            background-color: var(--color-purple);
+            transition: all 225ms ease-in-out;
         }
-      
+
         &:hover::after {
-          width: 50%;
-          margin-left: 0;
+            width: 50%;
+            margin-left: 0;
         }
     }
 }
 
 .burger-menu {
-    width: 50px;
-    height: 40px;
+    z-index: 1003;
     position: fixed;
     top: 50%;
     right: 10%;
+    width: 50px;
+    height: 40px;
     transform: translate(0, -50%);
     cursor: pointer;
-    z-index: 1003;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media(max-width: 970px) {
+        right: 5%;
+    }
 }
 
 .bar {
@@ -100,13 +107,13 @@ nav {
 .bar::before,
 .bar::after {
     content: "";
+    z-index: 1003;
+    position: absolute;
+    left: 0px;
     width: 100%;
     height: 3px;
     background-color: var(--color-font);
     border-radius: 50px;
-    position: absolute;
-    z-index: 1003;
-    left: 0px;
     transition: all 225ms ease;
 }
 
@@ -142,9 +149,11 @@ nav {
     &:nth-child(1) {
         animation-delay: 100ms;
     }
+
     &:nth-child(2) {
         animation-delay: 200ms;
     }
+
     &:nth-child(3) {
         animation-delay: 300ms;
     }
@@ -155,6 +164,7 @@ nav {
         transform: translateX(100%);
         opacity: 0;
     }
+
     70% {
         transform: translateX(-10%);
     }

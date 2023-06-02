@@ -1,50 +1,100 @@
 section {
     margin-top: var(--header-hight);
-    padding-right: 10%;
+    padding: var(--side-clearance);
     height: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
+
+    @media(max-width: 970px) {
+        padding: var(--side-clearance-mobile);
+        align-items: center;
+    }
 }
 
 .introduction-parent {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
+
+    @media(max-width: 970px) {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .introduction-img {
     z-index: 3;
     position: absolute;
-    margin-left: 10%;
+    top: clamp(6.25rem, 19.149rem + -21.277vw, 0rem);
+    left: 5%;
     width: 40vw;
     object-fit: contain;
+
+    @media(max-width: 970px) {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: clamp(17.5rem, 13.808rem + 18.462vw, 25rem);
+    }
 }
 
-.introduction-shape-shadow {
+.introduction-shape-shadow-img {
     z-index: 2;
     position: absolute;
-    object-fit: contain;
+    top: clamp(6.25rem, 19.149rem + -21.277vw, 0rem);
     left: 0;
-    width: clamp(31.25rem, -33.24468085106383rem + 106.38297872340425vw, 65.5rem);
+    width: clamp(43.75rem, 9.834rem + 55.944vw, 93.75rem);
+    object-fit: contain;
+
+    @media(max-width: 970px) {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: clamp(25rem, 15.769rem + 46.154vw, 43.75rem);
+    }
 }
 
-.shape-img {
+.vector-desktop-img {
     z-index: 3;
     position: absolute;
-    width: calc(100vw - 10px);
-    top: 20%;
+    top: 15%;
+    left: 0;
+    width: 100%;
+
+    @media(max-width: 970px) {
+        display: none;
+    }
+}
+
+.vector-mobile-img {
+    z-index: 3;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+
+    @media(min-width: 970px) {
+        display: none;
+    }
 }
 
 .introduction-text {
     z-index: 4;
-    display: flex;
-    flex-direction: column;
     position: absolute;
     top: clamp(7.5rem, 4.92rem + 4.255vw, 8.75rem);
-    right: 8%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+
+    @media(max-width: 970px) {
+        top: 45%;
+        right: 50%;
+        white-space: nowrap;
+        transform: translateX(50%);
+    }
 }
 
 .introduction-text-child {
@@ -55,12 +105,21 @@ section {
     transform: rotate(-90deg);
     font-size: clamp(2rem, -2rem + 6.666666666666667vw, 4rem);
     margin-right: -35px;
+
+    @media(max-width: 970px) {
+        font-size: clamp(1.6rem, 1.403rem + 0.985vw, 2rem);
+        margin-right: -30px;
+    }
 }
 
 .text-name {
     font-size: clamp(2.3125rem, -2.5890957446808516rem + 8.085106382978724vw, 4.6875rem);
     line-height: 120%;
     font-weight: 600;
+
+    @media(max-width: 970px) {
+        font-size: clamp(2rem, 1.852rem + 0.738vw, 2.3rem);
+    }
 }
 
 .text-job {
@@ -68,6 +127,10 @@ section {
     font-size: clamp(1.8rem, -1.7999999999999996rem + 6vw, 3.6rem);
     line-height: 120%;
     font-weight: 600;
+
+    @media(max-width: 970px) {
+        font-size: clamp(1.55rem, 1.427rem + 0.615vw, 1.8rem);
+    }
 }
 
 .button {
@@ -75,12 +138,12 @@ section {
     height: 38px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     padding: 10px 25px;
     margin-top: 25px;
-    gap: 10px;
 
+    font-size: 1.4rem;
     background-color: var(--color-green);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -91,7 +154,15 @@ section {
     }
 
     @media(max-width: 1150px) {
+        width: unset;
+        height: unset;
         padding: 10px 15px;
+    }
+
+    @media(max-width: 970px) {
+        width: 105px;
+        height: 28px;
+        font-size: 1rem;
     }
 }
 
@@ -119,6 +190,11 @@ section {
             transform: scale(1.1);
         }
     }
+
+    @media(max-width: 970px) {
+        gap: 42px;
+        top: 78%;
+    }
 }
 
 .purple-line {
@@ -127,23 +203,33 @@ section {
     border: 4px solid var(--color-purple);
 }
 
+.email {
+    @media(max-width: 970px) {
+        display: none;
+    }
+}
+
 .scroll-down-parent {
     z-index: 4;
     position: absolute;
-    top: 70%;
-    right: 2.5%;
+    top: 73%;
+    right: 5%;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 3px;
     transform: rotate(90deg);
 
     span {
         font-size: 1.4rem;
     }
-}
 
-.arrow-down {
-    animation: arrow-down-animation 2s infinite;
+    img {
+        animation: arrow-down-animation 2s infinite;
+    }
+
+    @media(max-width: 970px) {
+        display: none;
+    }
 }
 
 @keyframes arrow-down-animation {
