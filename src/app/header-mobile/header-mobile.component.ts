@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-header-mobile',
@@ -6,8 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./header-mobile.component.scss']
 })
 export class HeaderMobileComponent {
+  @Input() header!: HeaderComponent; // To access the toggleLanguage function and flagSource variable.
   isMenuOpen: boolean = false;
 
+  /**
+   * Toggles the menu open or closed.
+   * Updates the overflow property of the body element accordingly.
+   */
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
     this.toggleOverflowOnBody();

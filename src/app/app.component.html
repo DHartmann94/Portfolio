@@ -1,4 +1,4 @@
-<app-header class="hide-desktop"></app-header>
-<app-header-mobile class="hide-mobile"></app-header-mobile>
+<app-header class="hide-desktop" #header></app-header>
+<app-header-mobile class="hide-mobile" [header]="header"></app-header-mobile>
 
 <router-outlet></router-outlet>

@@ -1,15 +1,16 @@
 <header>
     <a href="#">
-        <img src="favicon.ico" title="Logo" alt="Logo">
+        <img class="logo-img" src="assets/img/logo.png" title="Logo" alt="Logo">
     </a>
     <div class="burger-menu" (click)="toggleMenu()">
         <div [ngClass]="{ 'open': isMenuOpen }" class="bar"></div>
     </div>
     <nav [ngClass]="{ 'active': isMenuOpen }">
         <ul [ngClass]="{ 'slide-in': isMenuOpen }">
-            <li (click)="toggleMenu()"><a href="#about-me">About Me</a></li>
-            <li (click)="toggleMenu()"><a href="#skills">Skills</a></li>
+            <li (click)="toggleMenu()"><a href="#about-me" translate>About me</a></li>
+            <li (click)="toggleMenu()"><a href="#skills" translate>Skills</a></li>
             <li (click)="toggleMenu()"><a href="#portfolio">Portfolio</a></li>
+            <li><img class="flag-img" [src]="header.flagSource" (click)="header.toggleLanguage()" alt="Flag"/></li>
         </ul>
     </nav>
 </header>

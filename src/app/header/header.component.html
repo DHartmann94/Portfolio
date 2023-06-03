@@ -1,12 +1,13 @@
 <header>
     <a href="#">
-        <img src="favicon.ico" title="Logo" alt="Logo">
+        <img class="logo-img" src="assets/img/logo.png" title="Logo" alt="Logo">
     </a>
     <nav>
-        <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
+        <ul class="show-desktop">
+            <li><a href="#about-me" translate>About me</a></li>
+            <li><a href="#skills" translate>Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
         </ul>
+        <img class="flag-img" [src]="flagSource" (click)="toggleLanguage()" alt="Flag"/>
     </nav>
 </header>

@@ -8,6 +8,14 @@ import { HeaderMobileComponent } from './header-mobile/header-mobile.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { MainComponent } from './main/main.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import {HttpClientModule, HttpClient} from '@angular/common/http';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
+// AoT requires an exported function for factories
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -16,11 +24,20 @@ import { AboutMeComponent } from './about-me/about-me.component';
     HeaderMobileComponent,
     IntroductionComponent,
     MainComponent,
-    AboutMeComponent
+    AboutMeComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      defaultLanguage: 'en',
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+    }
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
