@@ -15,18 +15,24 @@ section {
     }
 
     @media(max-width: 970px) {
+        margin-bottom: 114px;
         padding: var(--side-clearance-mobile);
+        flex-direction: column-reverse;
     }
 }
 
 .icons-parent {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
-    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    gap: clamp(1.25rem, -5.199rem + 10.638vw, 4.375rem);
+    width: 70%;
+    margin-right: clamp(0rem, -3.87rem + 6.383vw, 1.875rem);
 
     @media(max-width: 970px) {
-        gap: clamp(25px, -46.111111111111114px + 22.22222222222222vw, 165px);
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+        gap: 20px clamp(25px, -46.111111111111114px + 22.22222222222222vw, 165px);
+        width: 100%;
+        margin-right: 0px;
     }
 }
 
@@ -36,12 +42,28 @@ section {
     align-items: center;
     width: 70px;
     height: 100px;
+
+    img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        transition: all 500ms ease-in-out !important;
+
+        &:hover {
+            transform: rotateY(180deg);
+        }
+
+        @media(max-width: 970px) {
+            width: 45px;
+            height: 45px;
+        }
+    }
 }
 
 
 .purple-line {
     position: absolute;
-    top: clamp(42px, 29.03071672354949px + 1.3651877133105803vw, 50px);
+    top: clamp(1.875rem, -1.995rem + 6.383vw, 3.75rem);
     right: 0;
     width: clamp(3.625rem, -3.082rem + 11.064vw, 6.875rem);
     height: 0px;
@@ -56,12 +78,20 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media(max-width: 970px) {
+        margin-bottom: 5%;
+    }
 }
 
 .about-me-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
+
+    p {
+        text-align: right;
+    }
 }
 
 .button-about-me {
@@ -73,6 +103,13 @@ section {
     justify-content: center;
     padding: 15px 30px;
     margin-top: 25px;
+
+    @media(max-width: 970px) {
+        position: absolute;
+        bottom: -120px;
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
 
 .skills-shape-shadow-img {
@@ -80,9 +117,9 @@ section {
     position: absolute;
     top: -10%;
     left: 0;
-    
+
     @media(max-width: 970px) {
         top: 10%;
-        width: 50%;
+        width: 40%;
     }
 }
