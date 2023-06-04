@@ -187,7 +187,7 @@ section {
     }
 
     @media(max-width: 970px) {
-        gap: 42px;
+        gap: clamp(2.188rem, 1.972rem + 1.077vw, 2.625rem);
         top: 78%;
     }
 }
