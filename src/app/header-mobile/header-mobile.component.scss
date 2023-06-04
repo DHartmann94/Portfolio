@@ -85,6 +85,10 @@ nav {
     height: 25px;
     object-fit: contain;
     cursor: pointer;
+
+    &:hover {
+        scale: 1.1;
+      }
 }
 
 .burger-menu {

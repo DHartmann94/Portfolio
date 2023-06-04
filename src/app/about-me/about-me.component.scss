@@ -4,7 +4,6 @@ section {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    overflow: hidden;
 
     h1 {
         font-size: 5.6rem;
@@ -31,17 +30,17 @@ section {
 }
 
 .about-me-img {
-    width: 300px;
-    height: 300px;
+    width: clamp(18.75rem, 5.851rem + 21.277vw, 25rem);
+    height: clamp(18.75rem, 5.851rem + 21.277vw, 25rem);
     object-fit: contain;
-    border: 2px solid var(--color-green);
+    border: 3px solid var(--color-green);
     border-radius: 50%;
 }
 
 .green-line {
     width: clamp(3.563rem, -23.525rem + 44.681vw, 16.688rem);
     height: 0px;
-    border: 2px solid var(--color-green);
+    border: 3px solid var(--color-green);
 }
 
 .about-me-parent {
@@ -49,8 +48,6 @@ section {
     width: 475px;
 
     img {
-        transition: all 225ms ease;
-
         &:hover {
             scale: 1.1;
         }
@@ -69,15 +66,28 @@ section {
     gap: 35px;
 }
 
-.about-me-shape-shadow-img {
+/*
+.about-me-shape-shadow-bg {
     z-index: -1;
     position: absolute;
-    top: 0%;
-    right: -300px;
+    top: -10%;
+    right: 0;
 
     @media(max-width: 970px) {
         right: -500px;
     }
+}*/
+
+.about-me-shape-shadow-img {
+    z-index: -1;
+    position: absolute;
+    top: -5%;
+    right: 0;
+    background-image: url('^assets/img/backgrounds/shape_shadow_about_me.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: clamp(200px, 173.68421052631578px + 8.223684210526317vw, 300px);
+    height: 550px;
 }
 
 .text-position {

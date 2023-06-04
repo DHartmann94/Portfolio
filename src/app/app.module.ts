@@ -11,6 +11,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { SkillsComponent } from './skills/skills.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -25,6 +27,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     IntroductionComponent,
     MainComponent,
     AboutMeComponent,
+    SkillsComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,
