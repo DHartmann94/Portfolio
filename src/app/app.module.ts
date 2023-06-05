@@ -13,6 +13,7 @@ import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -29,6 +30,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AboutMeComponent,
     SkillsComponent,
     PortfolioComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
