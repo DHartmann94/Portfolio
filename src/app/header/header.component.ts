@@ -9,10 +9,11 @@ import { TranslateService } from '@ngx-translate/core';
 export class HeaderComponent {
   germanLanguage = false;
   flagSource = 'assets/img/flags/german_flag.png';
+  
 
   /**
    * Translate tool (ngx-translate)
-   * @param translate - String to be translated.
+   * @param {String} translate - Variable to be translated.
    */
   constructor(public translate: TranslateService) {
     translate.addLangs(['en', 'de']);
@@ -20,7 +21,7 @@ export class HeaderComponent {
   }
 
   /**
-   * Toggles the language between English and German.
+   * Toggles the language between english and german.
    * Updates the flag source based on the selected language.
    */
   toggleLanguage() {

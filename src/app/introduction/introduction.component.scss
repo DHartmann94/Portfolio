@@ -112,6 +112,16 @@ section {
     }
 }
 
+.text-y-german {
+    font-size: clamp(1.25rem, -1.329787234042553rem + 4.25531914893617vw, 2.5rem) !important;
+    margin-right: -50px !important;
+
+    @media(max-width: 970px) {
+        font-size: clamp(1.0625rem, -0.8723404255319147rem + 3.1914893617021276vw, 2rem) !important;
+        margin-right: -40px !important;
+    }
+}
+
 .text-name {
     font-size: clamp(2.3125rem, -2.5890957446808516rem + 8.085106382978724vw, 4.6875rem);
     line-height: 120%;

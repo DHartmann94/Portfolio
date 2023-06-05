@@ -6,12 +6,7 @@ section {
     position: relative;
 
     h1 {
-        font-size: 5.6rem;
         margin-bottom: 10px;
-
-        @media(max-width: 970px) {
-            font-size: 2.8rem;
-        }
     }
 
     @media(max-width: 970px) {
@@ -38,7 +33,7 @@ section {
 }
 
 .green-line {
-    width: clamp(3.563rem, -23.525rem + 44.681vw, 16.688rem);
+    width: clamp(3.125rem, -16.248rem + 31.955vw, 29.688rem); //clamp(3.563rem, -23.525rem + 44.681vw, 16.688rem)
     height: 0px;
     border: 3px solid var(--color-green);
 }

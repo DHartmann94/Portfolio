@@ -10,6 +10,7 @@ export class HeaderMobileComponent {
   @Input() header!: HeaderComponent; // To access the toggleLanguage function and flagSource variable.
   isMenuOpen: boolean = false;
 
+  
   /**
    * Toggles the menu open or closed.
    * Updates the overflow property of the body element accordingly.
