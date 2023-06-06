@@ -23,5 +23,4 @@ export class IntroductionComponent {
       this.language = setLanguage.lang;
     });
   }
-
 }

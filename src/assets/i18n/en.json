@@ -3,5 +3,9 @@
     "Skills": "Skills",
     "I am": "I am",
     "My skills": "My skills",
-    "These projects are a sample of my work - please feel free to try them out.": "These projects are a sample of my work - please feel free to try them out."
+    "These projects are a sample of my work - please feel free to try them out.": "These projects are a sample of my work - please feel free to try them out.",
+    "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "A simple 2D Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and bottles to fight against the killer-chickens.": "A simple 2D Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and bottles to fight against the killer-chickens.",
+    "Based on the PokéAPI a simple library that provides and catalogues pokemon information.": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
+    "Contact": "Contact"
 }

@@ -14,6 +14,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ContactComponent } from './contact/contact.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -31,6 +32,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     SkillsComponent,
     PortfolioComponent,
     ProjectsComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

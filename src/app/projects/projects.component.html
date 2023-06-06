@@ -1,35 +1,20 @@
 <section>
-    <div class="project-parent">
+    <div [ngClass]="{'project-parent': i % 2 === 0, 'project-parent-reverse': i % 2 === 1}" *ngFor="let project of projects; let i = index">
         <div>
-            <img class="project-img" src="assets/img/projects/pc_join.png" alt="Project">
+            <img class="project-img" src="{{ project.image }}" alt="{{ project.title }} Project">
         </div>
 
-        <div class="text-parent">
-            <span class="title">Title</span>
-            <span class="components">JavaScript | HTML | CSS | Backend</span>
-            <span>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. </span>
-            <div class="button-parent">
-                <a class="button button-live" target="_blank">Live test</a>
-                <a class="button button-github" target="_blank">Github</a>
+        <div [ngClass]="{'text-parent': i % 2 === 0, 'text-parent-reverse': i % 2 === 1}">
+            <span class="title">{{ project.title }}</span>
+            <span class="components">{{ project.components }}</span>
+            <span translate>{{ project.description }}</span>
+            <div [ngClass]="{'button-parent': i % 2 === 0, 'button-parent-reverse': i % 2 === 1}">
+                <a class="button button-live" href="{{ project.links[0] }}" target="_blank">Live test</a>
+                <a class="button button-github" href="{{ project.links[1] }}" target="_blank">Github</a>
             </div>
         </div>
     </div>
-
-    <div class="project-parent project-parent-reverse">
-        <div>
-            <img class="project-img" src="assets/img/projects/pc_join.png" alt="Project">
-        </div>
-
-        <div class="text-parent text-parent-reverse">
-            <span class="title">Title</span>
-            <span class="components">JavaScript | HTML | CSS | Backend</span>
-            <span>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. </span>
-            <div class="button-parent button-parent-reverse">
-                <a class="button button-live" target="_blank">Live test</a>
-                <a class="button button-github" target="_blank">Github</a>
-            </div>
-        </div>
-    </div>
+    
 
     <img class="skills-shape-shadow-purple-img" src="assets/img/backgrounds/shape_shadow_projects_purple.png">
     <img class="skills-shape-shadow-green-img" src="assets/img/backgrounds/shape_shadow_projects_green.png">

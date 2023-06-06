@@ -1,0 +1,9 @@
+section {
+    scroll-margin-top: var(--header-hight);
+    margin-top: var(--header-hight);
+    padding: var(--side-clearance);
+
+    @media(max-width: 970px) {
+        padding: var(--side-clearance-mobile);
+    }
+}

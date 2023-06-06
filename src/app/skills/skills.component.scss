@@ -7,18 +7,18 @@ section {
     position: relative;
 
     @media(max-width: 970px) {
-        margin-bottom: 223px; // 114px
+        margin-bottom: 229px; // 114px
         padding: var(--side-clearance-mobile);
         flex-direction: column-reverse;
     }
 }
 
 .icons-parent {
+    margin-right: clamp(0rem, -3.87rem + 6.383vw, 1.875rem);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
     gap: clamp(1.25rem, -5.199rem + 10.638vw, 4.375rem);
     width: 70%;
-    margin-right: clamp(0rem, -3.87rem + 6.383vw, 1.875rem);
 
     @media(max-width: 970px) {
         gap: clamp(1.875rem, 0.644rem + 6.154vw, 4.375rem);
@@ -90,14 +90,9 @@ section {
 }
 
 .button-about-me {
-    width: 155px;
-    height: 48px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 30px;
     margin-top: 25px;
+    width: 215px;
+    height: 63px;
 
     @media(max-width: 970px) {
         position: absolute;
