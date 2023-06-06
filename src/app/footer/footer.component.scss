@@ -1,0 +1,12 @@
+footer {
+    margin-top: var(--header-hight);
+    padding: var(--side-clearance);
+    position: relative;
+    height: 291px;
+    background-color: var(--color-background);
+    border-top: 3px solid var(--color-green);
+
+    @media(max-width: 970px) {
+        padding: var(--side-clearance-mobile);
+    }
+}

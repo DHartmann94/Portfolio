@@ -4,7 +4,9 @@
     --color-green: #70E61C;
     --color-light-blue: #1CDAE6;
     --color-purple: #9747FF;
-    --color-background-transparency: rgba(20, 29, 47, 0.8);;
+    --color-background-transparency: rgba(20, 29, 47, 0.8);
+    --color-error: #E61C40;
+    --color-form-hover: #1CDAE6;
 
     --header-hight: 109px;
     --side-clearance: 0% 10% 0% 10%;

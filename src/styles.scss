@@ -63,6 +63,7 @@ img {
     background-color: var(--color-green);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    cursor: pointer;
 
     &:hover {
         background-color: var(--color-purple);

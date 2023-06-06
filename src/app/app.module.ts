@@ -15,6 +15,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -33,6 +34,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     PortfolioComponent,
     ProjectsComponent,
     ContactComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

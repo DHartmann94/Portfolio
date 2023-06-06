@@ -1,3 +1,34 @@
 <section id="contact">
     <h1 translate>Contact</h1>
+
+    <div class="contact-parent">
+        <div class="text-parent">
+            <div>Got a problem to solve?</div>
+            <span>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to
+                your projects with my work.</span>
+            <span>Need a Frontend developer? <b>Contact me!</b></span>
+        </div>
+
+        <form (submit)="sendMail()">
+            <div class="input-parent">
+                <input type="text" placeholder="Your name" required>
+                <span class="error-message">Your name is required.</span>
+            </div>
+            <div class="input-parent">
+                <input type="email" placeholder="Your email" required>
+                <span class="error-message">Your email is required.</span>
+            </div>
+            <div class="input-parent">
+                <textarea placeholder="Your message" required></textarea>
+                <span class="error-message">Your message is empty.</span>
+            </div>
+
+            <button class="button button-form">Send message</button>
+        </form>
+    </div>
+
+    <a href="#" class="arrow-up-img">
+        <img [src]="currentImage" (mouseover)="currentImage = hoveredImage" (mouseout)="currentImage = normalImage" alt="Arrow-Up"/>
+    </a>
+    <img class="contact-shape-shadow-img" src="assets/img/backgrounds/shape_shadow_contact.png">
 </section>
