@@ -13,30 +13,34 @@
         <form (submit)="sendMail()" ngNativeValidate>
             <div class="input-parent">
                 <input type="text" placeholder="Your name" name="name" #nameField required>
-                <span [class.error-transparent]="!showErrorMessage" class="error-message">Your name is required.</span>
+                <div class="error-height">
+                    <span *ngIf="showErrorMessageName" class="error-message">Your name is required.</span>
+                </div>
             </div>
             <div class="input-parent">
                 <input type="email" placeholder="Your email" name="email" #emailField required>
-                <span [class.error-transparent]="!showErrorMessage" class="error-message">Your email is required.</span>
+                <div class="error-height">
+                    <span *ngIf="showErrorMessageEmail"  class="error-message">Please enter a valid email.</span>
+                </div>
             </div>
             <div class="input-parent">
                 <textarea placeholder="Your message" name="message" #messageField required></textarea>
-                <span [class.error-transparent]="!showErrorMessage" class="error-message">Your message is empty.</span>
+                <div class="error-height">
+                    <span *ngIf="showErrorMessageMessage" class="error-message">Your message is empty.</span>
+                </div>
             </div>
 
             <button class="button button-form" type="submit" #sendButton translate>Send message</button>
         </form>
     </div>
 
-    <div [class.d-none]="!showSendMailMessage" [class.email-send-message-animation]="showSendMailMessage" class="email-send-message" #viewAnimation>
+    <div *ngIf="showSendMailMessage" [class.email-send-message-animation]="showSendMailMessage" class="email-send-message" #viewAnimation>
         <div>
             <span translate>Your message has been sent!</span>
             <img src="./assets/img/icons/form_done.png" alt="Done">
         </div>
     </div>
 
-    <a href="#" class="arrow-up-img">
-        <img [src]="currentImage" (mouseover)="currentImage = hoveredImage" (mouseout)="currentImage = normalImage" alt="Arrow-Up"/>
-    </a>
+
     <img class="contact-shape-shadow-img" src="assets/img/backgrounds/shape_shadow_contact.png">
 </section>

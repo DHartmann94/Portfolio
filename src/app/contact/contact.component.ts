@@ -1,4 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -6,18 +7,15 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
-  currentImage: string = 'assets/img/icons/arrow_up.png';
-  normalImage: string = 'assets/img/icons/arrow_up.png';
-  hoveredImage: string = 'assets/img/icons/arrow_up_green.png';
-
   @ViewChild('nameField') nameField!: ElementRef;
   @ViewChild('emailField') emailField!: ElementRef;
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
 
-  showErrorMessage: boolean = false;
+  showErrorMessageName: boolean = false;
+  showErrorMessageEmail: boolean = false;
+  showErrorMessageMessage: boolean = false;
   showSendMailMessage: boolean = false;
-
 
   async sendMail() {
     let nameField = this.nameField.nativeElement;
@@ -30,7 +28,6 @@ export class ContactComponent {
     // animation
     this.prepareTransmitMail(formData, nameField, emailField, messageField);
     await this.transmitMail(formData);
-    // Nachricht anzeigen
     this.clearInput(nameField, emailField, messageField);
     this.enableInput(nameField, emailField, messageField, sendButton);
     this.showsSendMailAnimation();
@@ -49,7 +46,7 @@ export class ContactComponent {
       emailField.disabled = false;
       messageField.disabled = false;
       sendButton.disabled = false;
-    }, 3500)
+    }, 3500);
   }
 
   clearInput(nameField: any, emailField: any, messageField: any) {
@@ -58,7 +55,7 @@ export class ContactComponent {
     messageField.value = '';
   }
 
-  prepareTransmitMail(formData: any, nameField: any, emailField: any, messageField:any) {
+  prepareTransmitMail(formData: any, nameField: any, emailField: any, messageField: any) {
     formData.append('name', nameField.value);
     formData.append('email', emailField.value);
     formData.append('message', messageField.value);
@@ -67,10 +64,11 @@ export class ContactComponent {
   async transmitMail(formData: any) {
     // https://daniel-hartmann.developerakademie.net/send_mail/send_mail.php
     try {
-      await fetch('https://daniel-hartmann.developerakademie.net/send_mail/send_mail.php', {
-        method: 'Post',
-        body: formData,
-      });
+      await fetch('https://daniel-hartmann.developerakademie.net/send_mail/send_mail.php',
+        {
+          method: 'Post',
+          body: formData,
+        });
     } catch (error) {
       console.log('An error has occurred: ', error);
     }
@@ -79,8 +77,9 @@ export class ContactComponent {
   showsSendMailAnimation() {
     this.showSendMailMessage = true;
     setTimeout(() => {
-        this.showSendMailMessage = false;
+      this.showSendMailMessage = false;
     }, 3000);
-}
+  }
+
 
 }

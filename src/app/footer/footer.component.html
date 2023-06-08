@@ -1,3 +1,26 @@
 <footer>
-    <h1>FOOTER</h1>
+    <div class="logo-parent">
+        <img class="logo-img" src="assets/img/logo.png" alt="Logo">
+        <a routerLink="/imprint" class="imprint" translate>Imprint</a>
+    </div>
+
+    <div>
+        <span>© Daniel Hartmann 2023</span>
+    </div>
+
+    <div class="social-media-parent">
+        <a href="https://github.com/DHartmann94" target="_blank">
+            <img src="assets/img/icons/git_hub.png" title="Git Hub" alt="Git-Hub">
+        </a>
+        <a href="mailto: daniel.hartmann28@yahoo.de">
+            <img src="assets/img/icons/email.png" title="e-Mail" alt="e-Mail">
+        </a>
+        <a href="" target="_blank">
+            <img src="assets/img/icons/linkedin.png" title="LinkedIn" alt="LinkedIn">
+        </a>
+    </div>
+
+    <a (click)="scrollToTop()" class="arrow-up-img">
+        <img [src]="currentImage" (mouseover)="currentImage = hoveredImage" (mouseout)="currentImage = normalImage" alt="Arrow-Up"/>
+    </a>
 </footer>
