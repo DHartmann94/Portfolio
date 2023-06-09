@@ -12,25 +12,31 @@
 
         <form (submit)="sendMail()" ngNativeValidate>
             <div class="input-parent">
-                <input type="text" placeholder="Your name" name="name" #nameField required>
+                <input [class.invalid-input]="showErrorMessageName" type="text" placeholder="Your name" name="name" 
+                (blur)="blurVerify('name')" #nameField required>
                 <div class="error-height">
-                    <span *ngIf="showErrorMessageName" class="error-message">Your name is required.</span>
+                    <span *ngIf="showErrorMessageName" class="error-message" translate>Your name is required.</span>
                 </div>
             </div>
             <div class="input-parent">
-                <input type="email" placeholder="Your email" name="email" #emailField required>
+                <input [class.invalid-input]="showErrorMessageEmail" type="email" placeholder="Your email" name="email" 
+                (blur)="blurVerify('email')" #emailField required>
                 <div class="error-height">
-                    <span *ngIf="showErrorMessageEmail"  class="error-message">Please enter a valid email.</span>
+                    <span *ngIf="showErrorMessageEmail"  class="error-message" translate>Please enter a valid email.</span>
                 </div>
             </div>
             <div class="input-parent">
-                <textarea placeholder="Your message" name="message" #messageField required></textarea>
+                <textarea [class.invalid-input]="showErrorMessageMessage" placeholder="Your message" name="message" 
+                (blur)="blurVerify('message')" #messageField required></textarea>
                 <div class="error-height">
-                    <span *ngIf="showErrorMessageMessage" class="error-message">Your message is empty.</span>
+                    <span *ngIf="showErrorMessageMessage" class="error-message" translate>Your message is empty.</span>
                 </div>
             </div>
 
-            <button class="button button-form" type="submit" #sendButton translate>Send message</button>
+            <button class="button button-form" type="submit" #sendButton>
+                <span *ngIf="!showSendMailMessage" translate>Send message</span>
+                <div *ngIf="showSendMailMessage" class="loader pos-abs"></div>
+            </button>
         </form>
     </div>
 

@@ -56,25 +56,27 @@ form {
 
     input {
         font-family: 'Poppins';
-        padding: 15px 25px;
+        padding: 15px 30px;
         width: 100%;
         height: 35px;
         color: var(--color-font);
         background: var(--color-background);
         border: 1px solid var(--color-purple);
         border-radius: 10px;
+        position: relative;
         box-sizing: border-box;
     }
 
     textarea {
         font-family: 'Poppins';
-        padding: 15px 25px;
+        padding: 15px 30px;
         width: 100%;
         height: 202px;
         color: var(--color-font);
         background: var(--color-background);
         border: 1px solid var(--color-purple);
         border-radius: 10px;
+        position: relative;
         box-sizing: border-box;
     }
 
@@ -96,11 +98,15 @@ form {
     }
 }
 
-.invalid {
+.invalid-input {
+    background: url('^assets/img/icons/form_error.png') no-repeat !important;
+    background-position: calc(100% - 10px) 3px !important;
     border: 1px solid var(--color-error) !important;
 }
 
-.valid {
+.valid-input {
+    background: url('^assets/img/icons/form_done.png') no-repeat !important;
+    background-position: calc(100% - 10px) 3px !important;
     border: 1px solid var(--color-green) !important;
 }
 
@@ -130,6 +136,7 @@ input:-webkit-autofill {
     height: 63px;
     color: var(--color-font);
     border: 0px;
+    position: relative;
 }
 
 .purple-line {
@@ -191,6 +198,25 @@ input:-webkit-autofill {
     }
 }
 
+.loader {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0, 75s, visibility 0.75s;
+    z-index: 50;
+  }
+
+  .loader::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 15px solid var(--color-font);
+    border-top-color: var(--color-form-hover);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+
 .email-send-message-animation {
     animation: bottomToTop 0.8s ease-in-out forwards 0.2s;
 }
@@ -206,3 +232,13 @@ input:-webkit-autofill {
         opacity: 1;
     }
 }
+
+@keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+  
+    to {
+      transform: rotate(1turn);
+    }
+  }

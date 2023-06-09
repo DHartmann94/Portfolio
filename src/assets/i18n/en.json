@@ -9,6 +9,10 @@
     "Based on the PokéAPI a simple library that provides and catalogues pokemon information.": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
     "Contact": "Contact",
     "Send message": "Send message",
+    "Your name is required.": "Your name is required.",
+    "Please enter a valid email.": "Please enter a valid email.",
+    "Your message is empty.": "Your message is empty.",
     "Your message has been sent!": "Your message has been sent!",
-    "Imprint": "Imprint"
+    "Imprint": "Imprint",
+    "According to § 5 TMG": "According to § 5 TMG"
 }

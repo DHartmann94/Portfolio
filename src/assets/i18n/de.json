@@ -9,6 +9,10 @@
     "Based on the PokéAPI a simple library that provides and catalogues pokemon information.": "Basierend auf der PokéAPI, einer einfachen Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.",
     "Contact": "Kontakt",
     "Send message": "Senden",
+    "Your name is required.": "Ihr Name ist erforderlich.",
+    "Please enter a valid email.": "Bitte geben Sie eine gültige Email-Adresse ein.",
+    "Your message is empty.": "Sie haben keine Nachricht eingegeben.",
     "Your message has been sent!": "Ihre Nachricht wurde gesendet!",
-    "Imprint": "Impressum"
+    "Imprint": "Impressum",
+    "According to § 5 TMG": "Angaben gemäß § 5 TMG"
 }
