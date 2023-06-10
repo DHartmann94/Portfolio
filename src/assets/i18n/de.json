@@ -3,6 +3,7 @@
     "Skills": "Fähigkeiten",
     "I am": "Ich bin",
     "My skills": "Fähigkeiten",
+    "I have gained experience in building projects with various front end technologies and concepts.": "Ich habe Erfahrungen in verschiedenen Frontend-Technologien und -Konzepten sammeln können.",
     "These projects are a sample of my work - please feel free to try them out.": "Folgende Projekte repräsentieren meine Arbeit - bitte zögern Sie nicht, diese auszuprobieren.",
     "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.": "Vom Kanban-System inspirierter Aufgabenmanager. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
     "A simple 2D Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and bottles to fight against the killer-chickens.": "Ein einfaches 2D-Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Flaschen zu finden, um gegen die Killerhühnchen zu kämpfen.",
@@ -13,6 +14,10 @@
     "Please enter a valid email.": "Bitte geben Sie eine gültige Email-Adresse ein.",
     "Your message is empty.": "Sie haben keine Nachricht eingegeben.",
     "Your message has been sent!": "Ihre Nachricht wurde gesendet!",
+    "Got a problem to solve?": "Haben Sie ein Problem das gelöst werden muss?",
+    "Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit Ihre Projekte zu verwirklichen.",
+    "Need a Frontend developer?": "Brauchen Sie einen Frontend-Entwickler? ",
+    "Contact me!": "Kontaktieren Sie mich!",
     "Imprint": "Impressum",
     "According to § 5 TMG": "Angaben gemäß § 5 TMG"
 }

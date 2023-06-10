@@ -3,6 +3,7 @@
     "Skills": "Skills",
     "I am": "I am",
     "My skills": "My skills",
+    "I have gained experience in building projects with various front end technologies and concepts.": "I have gained experience in building projects with various front end technologies and concepts.",
     "These projects are a sample of my work - please feel free to try them out.": "These projects are a sample of my work - please feel free to try them out.",
     "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
     "A simple 2D Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and bottles to fight against the killer-chickens.": "A simple 2D Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and bottles to fight against the killer-chickens.",
@@ -13,6 +14,10 @@
     "Please enter a valid email.": "Please enter a valid email.",
     "Your message is empty.": "Your message is empty.",
     "Your message has been sent!": "Your message has been sent!",
+    "Got a problem to solve?": "Got a problem to solve?",
+    "Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.": "Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.",
+    "Need a Frontend developer?": "Need a Frontend developer? ",
+    "Contact me!": "Contact me!",
     "Imprint": "Imprint",
     "According to § 5 TMG": "According to § 5 TMG"
 }
