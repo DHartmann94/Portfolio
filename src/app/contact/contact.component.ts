@@ -104,28 +104,20 @@ export class ContactComponent {
 
   validNameOrMessage(inputType: string) {
     const inputField = (this as any)[inputType + 'Field'].nativeElement;
-    inputField.value.length > 0 ? this.inputValid(inputType) : this.inputInvalid(inputType);
+    inputField.value.length > 0 ? this.updateInputStatus(inputType, true) : this.updateInputStatus(inputType, false);
   }
 
   validEmail(inputType: string) {
     const inputField = (this as any)[inputType + 'Field'].nativeElement;
-    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inputField.value) ? this.inputValid(inputType) : this.inputInvalid(inputType);
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inputField.value) ? this.updateInputStatus(inputType, true) : this.updateInputStatus(inputType, false);
   }
 
-  inputValid(inputType: string) {
+  updateInputStatus(inputType: string, isValid: boolean) {
     let selectedError = 'showErrorMessage' + inputType.charAt(0).toUpperCase() + inputType.slice(1);
     let selectedValid = 'showDoneMessage' + inputType.charAt(0).toUpperCase() + inputType.slice(1);
-
-    (this as any)[`${selectedError}`] = false;
-    (this as any)[`${selectedValid}`] = true;
-  }
-
-  inputInvalid(inputType: string) {
-    let selectedError = 'showErrorMessage' + inputType.charAt(0).toUpperCase() + inputType.slice(1);
-    let selectedValid = 'showDoneMessage' + inputType.charAt(0).toUpperCase() + inputType.slice(1);
-
-    (this as any)[`${selectedError}`] = true;
-    (this as any)[`${selectedValid}`] = false;
+  
+    (this as any)[`${selectedError}`] = !isValid;
+    (this as any)[`${selectedValid}`] = isValid;
   }
 
 }

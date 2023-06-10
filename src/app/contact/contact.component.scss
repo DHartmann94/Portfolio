@@ -98,7 +98,7 @@ form {
 
     input:hover,
     textarea:hover {
-        border-color: var(--color-form-hover);
+        border-color: var(--color-light-blue);
     }
 
 
@@ -217,7 +217,7 @@ input:-webkit-autofill {
     width: 30px;
     height: 30px;
     border: 15px solid var(--color-font);
-    border-top-color: var(--color-form-hover);
+    border-top-color: var(--color-light-blue);
     border-radius: 50%;
     animation: loading 0.75s ease infinite;
   }
