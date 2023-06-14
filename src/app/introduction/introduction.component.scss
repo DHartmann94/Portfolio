@@ -28,25 +28,25 @@ section {
 .introduction-img {
     z-index: 3;
     position: absolute;
-    top: clamp(6.25rem, 19.149rem + -21.277vw, 0rem);
+    top: 0px;
     left: 5%;
-    width: 40vw;
+    width: 35vw;
     object-fit: contain;
 
     @media(max-width: 970px) {
-        top: 0;
+        top: 25px;
         left: 50%;
         transform: translateX(-50%);
-        width: clamp(17.5rem, 13.808rem + 18.462vw, 25rem);
+        width: clamp(16.875rem, 13.655rem + 13.559vw, 21.875rem);
     }
 }
 
 .introduction-shape-shadow-img {
     z-index: 2;
     position: absolute;
-    top: clamp(6.25rem, 19.149rem + -21.277vw, 0rem);
+    top: clamp(3.125rem, 5.808rem + -4.425vw, 0rem);
     left: 0;
-    width: clamp(43.75rem, 9.834rem + 55.944vw, 93.75rem);
+    width: clamp(37.5rem, -10.785rem + 79.646vw, 93.75rem);
     object-fit: contain;
 
     @media(max-width: 970px) {
@@ -72,7 +72,7 @@ section {
 .vector-mobile-img {
     z-index: 3;
     position: absolute;
-    top: 25%;
+    top: 300px;
     left: 0;
     width: 100%;
 
@@ -90,7 +90,7 @@ section {
     flex-direction: column;
 
     @media(max-width: 970px) {
-        top: 45%;
+        top: 51%;
         right: 50%;
         white-space: nowrap;
         transform: translateX(50%);
