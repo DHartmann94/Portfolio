@@ -5,11 +5,11 @@ import { ImprintComponent } from './imprint/imprint.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
-  { path: 'imprint', component: ImprintComponent },
+  { path: 'imprint', component: ImprintComponent, data: { scrollPositionRestoration: 'top' } },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -142,6 +142,7 @@ input:-webkit-autofill {
     height: 63px;
     color: var(--color-font);
     border: 0px;
+    transition: all 225ms ease-in-out;
     position: relative;
 }
 

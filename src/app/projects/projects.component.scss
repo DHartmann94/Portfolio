@@ -12,6 +12,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    width: 100%;
 
     @media(max-width: 970px) {
         flex-direction: column;
@@ -22,17 +23,28 @@ section {
 .project-parent-reverse {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     flex-direction: row-reverse;
     text-align: end;
+    width: 100%;
 
     @media(max-width: 970px) {
         flex-direction: column;
     }
 }
 
+.project-img-position {
+    width: 50%;
+
+    @media(max-width: 970px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
 .project-img {
-    margin-right: clamp(3.125rem, -9.774rem + 21.277vw, 9.375rem);
-    margin-left: clamp(3.125rem, -9.774rem + 21.277vw, 9.375rem);
     width: clamp(21.875rem, 11.145rem + 17.699vw, 34.375rem);
     object-fit: contain;
 
@@ -46,7 +58,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 45%;
+    width: 50%;
 
     @media(max-width: 970px) {
         align-items: center;
@@ -61,8 +73,8 @@ section {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 45%;
     align-items: flex-end;
+    width: 50%;
 
     @media(max-width: 970px) {
         align-items: center;

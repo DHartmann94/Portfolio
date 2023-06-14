@@ -1,6 +1,6 @@
 <section>
     <div [ngClass]="{'project-parent': i % 2 === 0, 'project-parent-reverse': i % 2 === 1}" *ngFor="let project of projects; let i = index">
-        <div>
+        <div class="project-img-position">
             <img class="project-img" src="{{ project.image }}" alt="{{ project.title }} Project">
         </div>
 
