@@ -13,7 +13,7 @@
         <form (submit)="sendMail()" ngNativeValidate>
             <div class="input-parent">
                 <input [ngClass]="{'invalid-input': showErrorMessageName, 'valid-input': showDoneMessageName}" 
-                type="text" placeholder="Your name" name="name" (blur)="blurVerify('name')" #nameField required>
+                type="text" [placeholder]="'Your Name' | translate" name="name" (blur)="blurVerify('name')" #nameField required>
                 <div class="error-height">
                     <span *ngIf="showErrorMessageName" class="error-message" translate>Your name is required.</span>
                 </div>
@@ -22,7 +22,7 @@
             </div>
             <div class="input-parent">
                 <input [ngClass]="{'invalid-input': showErrorMessageEmail, 'valid-input': showDoneMessageEmail}"  
-                type="email" placeholder="Your email" name="email" (blur)="blurVerify('email')" #emailField required>
+                type="email" [placeholder]="'Your Email' | translate" name="email" (blur)="blurVerify('email')" #emailField required>
                 <div class="error-height">
                     <span *ngIf="showErrorMessageEmail"  class="error-message" translate>Please enter a valid email.</span>
                 </div>
@@ -31,7 +31,7 @@
             </div>
             <div class="input-parent">
                 <textarea [ngClass]="{'invalid-input': showErrorMessageMessage, 'valid-input': showDoneMessageMessage}"  
-                placeholder="Your message" name="message" (blur)="blurVerify('message')" #messageField required></textarea>
+                [placeholder]="'Your Message' | translate" name="message" (blur)="blurVerify('message')" #messageField required></textarea>
                 <div class="error-height">
                     <span *ngIf="showErrorMessageMessage" class="error-message" translate>Your message is empty.</span>
                 </div>
