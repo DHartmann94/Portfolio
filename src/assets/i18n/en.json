@@ -12,6 +12,7 @@
     "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
     "A simple 2D Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and bottles to fight against the killer-chickens.": "A simple 2D Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and bottles to fight against the killer-chickens.",
     "Based on the PokéAPI a simple library that provides and catalogues pokemon information.": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
+    "Popular multiplayer card game. Built with Angular and Firebase backend": "Popular multiplayer card game. Built with Angular and Firebase backend",
     "Contact": "Contact",
     "Send message": "Send message",
     "Your name is required.": "Your name is required.",

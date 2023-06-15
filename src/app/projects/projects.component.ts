@@ -38,14 +38,14 @@ export class ProjectsComponent {
       image: 'assets/img/projects/pc_pokedex.png'
     },
     {
-      title: 'Platzhalter',
-      components: 'Angular | HTML | SCSS',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ducimus adipisci ad, blanditiis nostrum commodi sequi nesciunt...',
+      title: 'Ring of Fire',
+      components: 'Angular | HTML | SCSS | Firebase',
+      description: 'Popular multiplayer card game. Built with Angular and Firebase backend',
       links: [
-        '#',
-        'https://github.com/DHartmann94'
+        'https://daniel-hartmann.developerakademie.net/projects/ringoffire/index.html',
+        'https://github.com/DHartmann94/Ring_Of_Fire'
       ],
-      image: 'assets/img/projects/pc_join.png'
+      image: 'assets/img/projects/pc_ring_of_fire.png'
     },
   ];
 
