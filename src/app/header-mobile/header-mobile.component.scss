@@ -72,10 +72,9 @@ nav {
 .logo-img {
     z-index: 1003;
     position: fixed;
-    top: 50%;
+    top: 17px;
     width: 75px;
     height: 75px;
-    transform: translate(0, -50%);
     object-fit: contain;
 }
 
@@ -94,11 +93,10 @@ nav {
 .burger-menu {
     z-index: 1003;
     position: fixed;
-    top: 50%;
+    top: 34.5px;
     right: 10%;
     width: 50px;
     height: 40px;
-    transform: translate(0, -50%);
     cursor: pointer;
     display: flex;
     align-items: center;
