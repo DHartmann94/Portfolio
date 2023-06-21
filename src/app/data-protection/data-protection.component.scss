@@ -1,0 +1,17 @@
+section {
+    margin-top: var(--header-hight);
+    padding: var(--side-clearance);
+    position: relative;
+
+    h1,h2,h3,h4 {
+        margin: 1rem 0rem 1rem 0rem;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+
+    @media(max-width: 970px) {
+        padding: var(--side-clearance-mobile);
+    }
+}

@@ -11,6 +11,7 @@ footer {
 
     @media(max-width: 970px) {
         padding: var(--side-clearance-mobile);
+        height: 351px;
         flex-direction: column;
         justify-content: space-around;
     }

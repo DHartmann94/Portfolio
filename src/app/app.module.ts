@@ -18,6 +18,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { ImprintComponent } from './imprint/imprint.component';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -38,6 +39,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactComponent,
     FooterComponent,
     ImprintComponent,
+    DataProtectionComponent,
   ],
   imports: [
     BrowserModule,
