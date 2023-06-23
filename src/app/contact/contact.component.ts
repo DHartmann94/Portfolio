@@ -25,7 +25,6 @@ export class ContactComponent {
    * These functions are for validating and sending the contact field. 
    */
   async sendMail() {
-    console.log('Test');
     let nameField = this.nameField.nativeElement;
     let emailField = this.emailField.nativeElement;
     let messageField = this.messageField.nativeElement;
